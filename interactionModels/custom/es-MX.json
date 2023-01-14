@@ -1,0 +1,511 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "simulemos escenario",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "CaptureDataPatientIntent",
+          "slots": [
+            {
+              "name": "Memoria_uno",
+              "type": "AMAZON.FirstName",
+              "samples": [
+                "recuerda esto en memoria uno {Memoria_uno}"
+              ]
+            },
+            {
+              "name": "Memoria_dos",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "recuerda esto en memoria dos {Memoria_dos}"
+              ]
+            },
+            {
+              "name": "Memoria_tres",
+              "type": "AMAZON.FirstName",
+              "samples": [
+                "recuerda esto en memoria tres {Memoria_tres}"
+              ]
+            },
+            {
+              "name": "Memoria_cuatro",
+              "type": "AMAZON.FirstName",
+              "samples": [
+                "recuerda esto en memoria cuatro {Memoria_cuatro}"
+              ]
+            },
+            {
+              "name": "Memoria_cinco",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "recuerda esto en memoria cinco {Memoria_cinco}"
+              ]
+            },
+            {
+              "name": "Memoria_seis",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "recuerda esto en memoria seis {Memoria_seis}"
+              ]
+            }
+          ],
+          "samples": [
+            "necesito que recuerdes algo"
+          ]
+        },
+        {
+          "name": "EscenaSegura",
+          "slots": [],
+          "samples": [
+            "la escena es segura",
+            "es segura",
+            "segura",
+            "sí es segura"
+          ]
+        },
+        {
+          "name": "EscenaNoSegura",
+          "slots": [],
+          "samples": [
+            "la escena no es segura",
+            "no es segura",
+            "insegura",
+            "no no es segura"
+          ]
+        },
+        {
+          "name": "Responde",
+          "slots": [],
+          "samples": [
+            "el adulto responde",
+            "la victima respondio",
+            "la victima sí responde",
+            "el lactante responde",
+            "el lactante respondio",
+            "el lactante sí responde",
+            "responde",
+            "sí responde"
+          ]
+        },
+        {
+          "name": "NoResponde",
+          "slots": [],
+          "samples": [
+            "el adulto no responde",
+            "la victima no respondio",
+            "el lactante no responde",
+            "no responde",
+            "no respondio"
+          ]
+        },
+        {
+          "name": "SiPulso",
+          "slots": [],
+          "samples": [
+            "sí cuenta con signos vitales",
+            "sí tiene signos vitales",
+            "tiene signos vitales",
+            "tiene signos",
+            "cuenta con signos vitales",
+            "sí cuenta con ellos",
+            "sí los tiene",
+            "sí lo tiene",
+            "los tiene",
+            "sí tiene pulso",
+            "tiene pulso",
+            "tiene pulso cardiaco",
+            "ha recuperado el pulso",
+            "ya tiene pulso",
+            "recupero el pulso",
+            "sí tiene pulso cardiaco"
+          ]
+        },
+        {
+          "name": "NoPulso",
+          "slots": [],
+          "samples": [
+            "no cuenta con signos vitales",
+            "no tiene signos vitales",
+            "no tiene",
+            "no lo tiene",
+            "no tiene signos",
+            "no cuenta con pulso",
+            "ha perdido el pulso",
+            "ya no tiene pulso",
+            "perdió el pulso",
+            "no tiene pulso",
+            "entro en paro"
+          ]
+        },
+        {
+          "name": "MalaPerfusion",
+          "slots": [],
+          "samples": [
+            "tiene mala perfusión",
+            "tiene una mala perfusión",
+            "no tiene buena perfusión",
+            "tiene problemas de perfusión",
+            "tiene pulso bajo",
+            "tiene pulso menor"
+          ]
+        },
+        {
+          "name": "NoRespira",
+          "slots": [],
+          "samples": [
+            "no respira",
+            "no tiene respiración",
+            "no cuenta con respiración",
+            "no esta respirando"
+          ]
+        },
+        {
+          "name": "SiRespira",
+          "slots": [],
+          "samples": [
+            "respira",
+            "sí respira",
+            "sí tiene respiración",
+            "sí cuenta con respiración",
+            "sí esta respirando",
+            "ya esta respirando",
+            "recuperado la respiración"
+          ]
+        },
+        {
+          "name": "AsistenciaContracciones",
+          "slots": [],
+          "samples": [
+            "bien",
+            "entendido",
+            "de acuerdo",
+            "esta bien",
+            "listo",
+            "entiendo"
+          ]
+        },
+        {
+          "name": "Dea",
+          "slots": [],
+          "samples": [
+            "ha llegado el d. e. a.",
+            "llego el d. e. a.",
+            "tenemos el d. e. a.",
+            "ya trajeron el d. e. a.",
+            "ha llegado el dea",
+            "llego el dea",
+            "tenemos el dea",
+            "ya trajeron el dea",
+            "ha llegado el d. a. e.",
+            "llego el d. a. e.",
+            "tenemos el d. a. e.",
+            "ya trajeron el d. a. e.",
+            "ha llegado el dae",
+            "llego el dae",
+            "tenemos el dae",
+            "ya trajeron el dae"
+          ]
+        },
+        {
+          "name": "SiDesfibrilable",
+          "slots": [],
+          "samples": [
+            "es desfibrilable",
+            "sí es desfibrilable",
+            "el ritmo es desfibrilable",
+            "el ritmo sí es desfibrilable",
+            "sí lo es"
+          ]
+        },
+        {
+          "name": "NoDesfibrilable",
+          "slots": [],
+          "samples": [
+            "no es desfiibrilable",
+            "el ritmo no es desfibrilable",
+            "no lo es"
+          ]
+        },
+        {
+          "name": "FinDePractica",
+          "slots": [],
+          "samples": [
+            "han llegado los profesionales de soporte vital avanzado",
+            "el paciente ha despertado",
+            "el paciente despertó",
+            "se reanimo al paciente",
+            "la práctica ha terminado",
+            "la práctica finalizo",
+            "llegaron los paramedicos",
+            "eso es todo"
+          ]
+        },
+        {
+          "name": "QueEsCompresion",
+          "slots": [],
+          "samples": [
+            "que es una compresión",
+            "que es compresión",
+            "como se hace una compresión",
+            "que son compresiones",
+            "que es r. c. p.",
+            "como se hacen las compresiones",
+            "qué es una compresión",
+            "qué es compresión",
+            "cómo se hace una compresión",
+            "qué son compresiones",
+            "qué es r. c. p.",
+            "cómo se hacen las compresiones"
+          ]
+        },
+        {
+          "name": "QueEsPerfusion",
+          "slots": [],
+          "samples": [
+            "que es mala perfusión",
+            "que es perfusión",
+            "que son signos de mala perfusión",
+            "qué es mala perfusión",
+            "qué es perfusión",
+            "qué son signos de mala perfusión"
+          ]
+        },
+        {
+          "name": "QueEsVentilacion",
+          "slots": [],
+          "samples": [
+            "que es una ventilación",
+            "que es ventilación",
+            "como se hace una ventilación",
+            "que son ventilaciones",
+            "que son las ventilaciones",
+            "como se hacen las ventilaciones",
+            "como se hace una ventilación",
+            "qué es una ventilación",
+            "qué es ventilación",
+            "cómo se hace una ventilación",
+            "qué son ventilaciones",
+            "qué son las ventilaciones",
+            "cómo se hacen las ventilaciones",
+            "cómo se hace una ventilación"
+          ]
+        },
+        {
+          "name": "QueEsEscenaSegura",
+          "slots": [],
+          "samples": [
+            "que es una escena segura",
+            "que es escena segura",
+            "como es una escena segura",
+            "qué es una escena segura",
+            "qué es escena segura",
+            "cómo es una escena segura"
+          ]
+        },
+        {
+          "name": "QueEsEscenaInsegura",
+          "slots": [],
+          "samples": [
+            "que es una escena insegura",
+            "que es escena insegura",
+            "como es una escena insegura",
+            "que es una escena no segura",
+            "que es escena no segura",
+            "como es una escena no segura",
+            "qué es una escena insegura",
+            "qué es escena insegura",
+            "cómo es una escena insegura",
+            "qué es una escena no segura",
+            "qué es escena no segura",
+            "comó es una escena no segura"
+          ]
+        },
+        {
+          "name": "QueEsDEA",
+          "slots": [],
+          "samples": [
+            "que es un d. e. a.",
+            "que es d. e. a.",
+            "comó se usa un d. e. a.",
+            "que es un dea",
+            "que es dea",
+            "comó se usa un dea",
+            "qué es un d. e. a.",
+            "qué es d. e. a.",
+            "qué es un dea",
+            "qué es dea",
+            "que es un d. a. e.",
+            "que es d. a. e.",
+            "comó se usa un d. a. e.",
+            "que es un dae",
+            "que es dae",
+            "comó se usa un dae",
+            "qué es un d. a. e.",
+            "qué es d. a. e.",
+            "qué es un dae",
+            "qué es dae"
+          ]
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Si"
+              }
+            }
+          ],
+          "name": "yes"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "CaptureDataPatientIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "Memoria_uno",
+              "type": "AMAZON.FirstName",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.348922811942.355598118420"
+              }
+            },
+            {
+              "name": "Memoria_dos",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.483227984715.910931129043"
+              }
+            },
+            {
+              "name": "Memoria_tres",
+              "type": "AMAZON.FirstName",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.483227984715.1489558441254"
+              }
+            },
+            {
+              "name": "Memoria_cuatro",
+              "type": "AMAZON.FirstName",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.483227984715.1508459851480"
+              }
+            },
+            {
+              "name": "Memoria_cinco",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.483227984715.578473583891"
+              }
+            },
+            {
+              "name": "Memoria_seis",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.483227984715.346438985918"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.348922811942.355598118420",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Dime que quieres que recuerde en la memoria uno."
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.483227984715.910931129043",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Dime que quieres que recuerde en la memoria dos."
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.483227984715.1489558441254",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Dime que quieres que recuerde en la memoria tres."
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.483227984715.1508459851480",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Dime que quieres que recuerde en la memoria cuatro."
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.483227984715.578473583891",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Dime que quieres que recuerde en la memoria cinco."
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.483227984715.346438985918",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Dime que quieres que recuerde en la memoria seis."
+          }
+        ]
+      }
+    ]
+  },
+  "version": "58"
+}
